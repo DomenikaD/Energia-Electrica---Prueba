@@ -43,7 +43,7 @@ public class Consumo {
 		this.fecha = fecha;
 	}
 
-	public double getValor() {
+	public int getValor() {
 		return valor;
 	}
 
