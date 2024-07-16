@@ -46,12 +46,12 @@ public class VistaClientes {
 	}
 	
 	
-	public String consultar() {
+	public String consulta() {
 		System.out.println(this.persona);
 	
 	try {
 		gClientes.createCliente(persona);
-		return "listadoClientes?faces-redirect=true";
+		return "listadoConsultas?faces-redirect=true";
 		} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -59,5 +59,8 @@ public class VistaClientes {
 		}
 	}
 
+    public String back() {
+        return "clientes?faces-redirect=true";
+    }
 
 }

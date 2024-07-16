@@ -6,12 +6,15 @@
 
 <h:head></h:head> 
 <body> 
-
+<h1> Consultar Consumos y Deudas Pendientes Energía Eléctrica</h1>
 <h:form>
+
+	<h3> Ingresar su numero de Cedula</h3>
 	<h:inputText id ="cedula" value="#{clientes.persona.cedula}"/>
+	
 
 
-	<h:commandButton action="#{clientes.consultar()}" value="Consultar"/> 
+	<h:commandButton action="#{clientes.consulta()}" value="Consultar"/> 
 	
 	
 </h:form>
