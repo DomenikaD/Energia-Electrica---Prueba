@@ -8,19 +8,19 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="TBL_CONSUMO")
-public class Consumo {
+@Table(name="TBL_DEUDA")
+public class Deuda {
 	
 	
 	@Id
-	@Column(name="con_id")
+	@Column(name="deu_id")
 	private int id;
 	
-	@Column(name="con_fecha")
+	@Column(name="deu_fecha")
 	private Date fecha;
 	
-	@Column(name="con_valor")
-	private int valor;
+	@Column(name="deu_costo")
+	private double costo;
 
 	
 	/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
@@ -43,12 +43,12 @@ public class Consumo {
 		this.fecha = fecha;
 	}
 
-	public double getValor() {
-		return valor;
+	public double getCosto() {
+		return costo;
 	}
 
-	public void setValor(int valor) {
-		this.valor = valor;
+	public void setCosto(double costo) {
+		this.costo = costo;
 	}
 
 	/*°°°°°°°°°°°°°°°°°°°°°°
@@ -57,10 +57,8 @@ public class Consumo {
 	
 	@Override
 	public String toString() {
-		return "Consumo [id=" + id + ", fecha=" + fecha + ", valor=" + valor + "]";
+		return "Deuda [id=" + id + ", fecha=" + fecha + ", costo=" + costo + "]";
 	}
-	
-	
 	
 	
 	
